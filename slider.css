@@ -1,0 +1,83 @@
+.slider-container-item {
+  width: 100%;
+  background-color: white !important;
+  height: 36vw;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.slider-container {
+  max-width: 82vw;
+  height: 30vw;
+  display: flex;
+  overflow: hidden;
+  margin: auto;
+  top: 6%;
+  z-index: 100;
+  border: none;
+  right: 0;
+  left: 0;
+  border-radius: 10px;
+  background-color: white !important;
+  bottom: 0px;
+  position: relative;
+}
+
+.arrows {
+  color: #000;
+  padding: 100px;
+}
+.active-item {
+  display: block;
+}
+.inactive {
+  display: none;
+}
+.slide-image {
+  width: 90vw;
+  height: 45vw;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 200;
+  position: absolute;
+  object-fit: contain;
+}
+.prevBtn,
+.nextBtn {
+  width: 4vw;
+  height: 4vw;
+  top: 40%;
+  cursor: pointer;
+  z-index: 500;
+  position: absolute;
+  border-radius: 50%;
+  line-height: 2px;
+  background: rgba(255, 166, 0, 0.479);
+  padding: 0.1rem;
+  border: none;
+  font-size: 2vw;
+  font-weight: bold;
+  border-radius: 50%;
+}
+.prevBtn:hover,
+.nextBtn:hover {
+  color: white;
+  background-color: rgba(255, 166, 0, 0.651);
+  transition: all 0.3s ease-in;
+}
+.nextBtn {
+  right: 0;
+}
+.prevBtn {
+  left: 0;
+}
+
+@media only screen and (max-width: 1360px) {
+  .prevBtn,
+  .nextBtn {
+    cursor: none;
+  }
+}
